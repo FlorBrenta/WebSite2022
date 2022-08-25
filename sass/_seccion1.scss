@@ -1,0 +1,16 @@
+/* SECTION 1 */
+
+.seccion1 {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 3rem;
+    grid-template-areas: 
+    'h3seccion1'
+    'imgseccion1'
+    'textoseccion1'
+    'videoseccion1';
+    justify-items: center;
+}
