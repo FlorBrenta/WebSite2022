@@ -1,0 +1,38 @@
+
+header{
+    background-color: $background-green;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.parair{
+    margin: 40px 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        padding: 20px 0px;
+    }
+    
+    .card-body{
+        background-color: $background-section;
+        padding: 20px;
+        &:hover{
+            background-color: rgb(244, 59, 138);
+            .card-title{
+                font: $texto-2;
+            }
+            .card-text{
+                font: $texto-3;
+            }
+        }
+     }  
+     .card-footer{
+        background-color: azure;
+        .text-muted{
+            font: $texto-4;
+        }
+     }
+}

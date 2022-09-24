@@ -8,17 +8,15 @@ body{
     main{
         .parte1 {
             width: max-content;
-            height: 860PX;
+            height: 680px;
             overflow: hidden;
             position: relative;
             box-shadow: 5px 0px rgb(69, 69, 69);
         
           h1{
-                padding: 20px;
-                position: absolute;
-                top: 60%;
-                left: 71%;
-                color: white;
+            margin: 80px;
+            padding: 40px;
+            color: white;
                 }
         img{
                 width: 100%;
@@ -61,12 +59,13 @@ body{
             display: flex;
             flex-direction: row;
                     .pasos{
-            
+                        margin: auto 10px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        h3{
+                        border: none;
+                        .nro{
                             padding: 40px 80PX;
                             font-size: 80px;
                             text-shadow: 5px;
@@ -79,6 +78,7 @@ body{
                         }
                         p{
                             font: $texto-3;
+                            padding: 40px;
                         }
                     }
                 }
@@ -114,3 +114,4 @@ body{
 }
 }
 } 
+
