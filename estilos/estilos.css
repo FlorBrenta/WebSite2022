@@ -1,346 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,900&display=swap"); /* Variables */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,900&display=swap");
-h1 {
-  color: rgb(23, 137, 132);
-  font-family: "playfair", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 40px;
-  text-align: center;
-}
-
-h2 {
-  height: 10vh;
-  color: rgb(7, 56, 66);
-  font-family: "roboto", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 30px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-}
-
-h3 {
-  padding: 5px 0;
-  margin: 20px 0;
-}
-
-/*----------------------------- FOOTER -----------------------------*/
-footer {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+/*----------------------------- HEADER -----------------------------*/
+header {
   background-color: rgb(95, 141, 125);
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
-footer img {
-  width: 70%;
-}
-footer .footerRedesContainer {
+
+.nav {
   display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
+  justify-content: space-between;
 }
-footer .footerRedesContainer div {
-  width: 30%;
+.nav .logo {
+  margin: 15px;
+  padding-bottom: 15px;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+}
+.nav .logo:hover {
+  motion-rotation: auto;
+}
+.nav ul {
   display: flex;
-  justify-content: center;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "playfair", sans-serif;
+  font-size: 15px;
+  margin: 0 10px;
+  line-height: 80px;
+}
+.nav ul li a:hover {
+  font-size: 20px;
+  color: rgb(244, 59, 138);
 }
 
-/* SECTION 1 */
-.seccion1 {
-  margin: 1rem 0;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  gap: 3rem;
-  grid-template-areas: "h3seccion1" "imgseccion1" "textoseccion1" "videoseccion1";
-  justify-items: center;
-}
-
-/* SECTION 2 */
-.seccion2 {
-  margin: 1rem 0;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  gap: 3rem;
-  grid-template-areas: "h3seccion2" "textoseccion2" "videoseccion2";
-  justify-items: center;
-}
-.seccion2 h3 {
-  grid-area: h3seccion2;
-}
-.seccion2 .seccion2_titulo {
-  grid-area: h3seccion2;
-}
-.seccion2 .seccion2_texto {
-  grid-area: textoseccion2;
-  width: 100%;
-}
-.seccion2 .seccion2_video {
-  grid-area: videoseccion2;
-  width: 100%;
-}
-
-/* SECTION 3 */
-.seccion3 {
-  margin: 1rem 0;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  gap: 3rem;
-  grid-template-areas: "h3seccion3" "textoseccion3";
-  justify-items: center;
-}
-.seccion3 h2 {
-  grid-area: h3seccion2;
-  display: grid;
-}
-.seccion3 .seccion3_titulo {
-  grid-area: h3seccion2;
-  display: grid;
-}
-.seccion3 .seccion3_texto {
-  grid-area: textoseccion2;
-  width: 100%;
-  display: grid;
-}
-
-* {
+/*----------------------------- HOME -----------------------------*/
+body {
+  background-color: rgb(187, 189, 189);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/*----------------------------- HEADER -----------------------------*/
-header {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(95, 141, 125);
+body main .parte1 h1 {
+  font: bold 60px "playfair", sans-serif rgb(255, 255, 255);
+  margin: 325px 1167px 384px 309px;
+  padding: 20px;
+}
+body main .parte1 img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 1200PX;
+  margin: 0px 0px 10px;
+}
+body main .parte2 {
+  margin: 40px 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+}
+body main .parte2 h2 {
+  font: bold 40px "playfair", sans-serif rgb(75, 69, 69);
+}
+body main .parte2 p {
+  font: bold 36px "roboto", sans-serif rgb(75, 69, 69);
+}
+body main .parte3 {
+  margin: 40px 0px 0px;
+  padding: 40px 40px 0px;
+  background-color: rgb(244, 211, 225);
+  display: flex;
+  flex-direction: column;
+}
+body main .parte3 h2 {
+  font: bold 40px "playfair", sans-serif rgb(75, 69, 69);
+}
+body main .parte3 p {
+  font: medium 36px "roboto", sans-serif rgb(75, 69, 69);
+}
+body main .lista-pasos {
+  margin: 0px 0px 40px;
+  padding: 40px 40px 40px;
+  background-color: rgb(244, 211, 225);
+  display: flex;
+  flex-direction: row;
+}
+body main .lista-pasos .pasos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 2rem;
+  border-color: rgb(95, 141, 125) solid;
 }
-
-/*----------------------------- MAIN -----------------------------*/
-main {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(216, 215, 215);
+body main .lista-pasos .pasos h3 {
+  padding: 40px 80PX;
+  font-size: 80px;
+  font-family: "playfair", sans-serif rgb(95, 141, 125);
 }
-
-.resaltado {
-  padding-top: 30px 20px;
-  margin-top: 20px 0;
-  color: rgb(133, 17, 135);
-  background-color: beige;
-  font-style: oblique;
-  line-height: 30px;
+body main .lista-pasos .pasos h4 {
+  font: italic 14px "playfair", sans-serif rgb(75, 69, 69);
 }
-
-p {
-  padding: 5px 0;
-  margin: 20px 0;
-  color: rgb(45, 44, 44);
-  font-family: "lato", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 20px;
-  text-align: left;
+body main .lista-pasos .pasos p {
+  font: medium 18px "roboto", sans-serif rgb(75, 69, 69);
 }
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: aliceblue;
-  font-family: "roboto", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-}
-
-section {
-  width: 100%;
-  height: 100%;
-}
-
-.detalle {
-  padding: 10px;
-  color: aliceblue;
-  background-color: rgb(136, 162, 176);
-}
-
-.hero {
-  padding: 10px;
-  margin: 40px;
-  border: solid cornflowerblue 2px;
-}
-
-.compras {
+body main .parte4 {
+  margin: 40px 30px;
   padding: 20px;
-  margin-top: 20;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+}
+body main .parte4 h2 {
+  padding: 20px 0px;
+}
+body main .parte4 .card-body {
+  background-color: rgb(244, 211, 225);
+}
+body main .parte4 .card-body:hover {
+  background-color: rgb(244, 59, 138);
+}
+body main .parte4 .card-body:hover .card-title {
+  font: medium 36px "roboto", sans-serif rgb(75, 69, 69);
+}
+body main .parte4 .card-body:hover .card-text {
+  font: medium 18px "roboto", sans-serif rgb(75, 69, 69);
+}
+body main .parte4 .card-footer {
+  background-color: azure;
+}
+body main .parte4 .card-footer .text-muted {
+  font: italic 14px "playfair", sans-serif rgb(75, 69, 69);
 }
 
-.white {
-  color: aliceblue;
+/*----------------------------- RECETARIO -----------------------------*/
+body {
+  background-color: rgb(187, 189, 189);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body section h2 {
+  font: bold 40px "playfair", sans-serif rgb(75, 69, 69);
+}
+body section p {
+  font: medium 36px "roboto", sans-serif rgb(75, 69, 69);
+}
+body section .contenedor_recetario {
+  margin: 120px 0px 0px;
+  padding: 40px 40px 0px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: row;
+}
+body section .contenedor_recetario .pastilla-receta img {
+  padding: 40px;
+  background-color: rgb(95, 141, 125);
+  width: 20px;
+  height: 20px;
+}
+body section .contenedor_recetario .pastilla-receta h5 {
+  font: medium 36px "roboto", sans-serif rgb(75, 69, 69);
 }
 
-@media screen and (min-width: 600px) {
-  p {
-    font-size: 1.3rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  li {
-    list-style: none;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: "roboto", sans-serif;
-  }
-  /*----------------------------- HEADER -----------------------------*/
-  header {
-    width: 100%;
-    height: 10vh;
-    background-color: rgb(95, 141, 125);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-  }
-  .logo {
-    width: 30%;
-  }
-  header nav {
-    height: 100%;
-    width: 70%;
-  }
-  header ul {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  header li {
-    font-size: 1rem;
-  }
-  /*----------------------------- FOOTER -----------------------------*/
-  footer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(95, 141, 125);
-  }
-  .footerRedesContainer {
-    height: 100%;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .footerRedesContainer div {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-  }
+/*----------------------------- FOOTER -----------------------------*/
+footer {
+  background-color: rgb(95, 141, 125);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  min-height: 20vh;
 }
-@media screen and (min-width: 1024px) {
-  /*----------------------------- MAIN -----------------------------*/
-  main {
-    width: 100%;
-    height: 100%;
-  }
-  body {
-    background-color: rgb(216, 215, 215);
-  }
-  /* SECTION 1 */
-  .seccion1 {
-    margin: 1rem 3rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: a5rem auto;
-    gap: 3rem;
-    grid-template-areas: "h3seccion1" "h3seccion1" "h3seccion1" "imgseccion1" "textoseccion1" "textoseccion1";
-    justify-items: center;
-  }
-  .seccion1_texto {
-    grid-area: textoseccion1;
-    display: flex;
-    align-items: center;
-  }
-  /* SECTION 2 */
-  .seccion2 {
-    margin: 1rem 3rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem auto;
-    gap: 3rem;
-    grid-template-areas: "h3seccion2" "videoseccion2" "textoseccion2";
-    justify-items: center;
-  }
-  .seccion2_texto {
-    grid-area: textoseccion2;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  /* SECTION 3 */
-  .seccion3 {
-    margin: 1rem 3rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5rem auto;
-    gap: 3rem;
-    grid-template-areas: "h3seccion3" "h3seccion3" "h3seccion3" "textoseccion3" "textoseccion3" "textoseccion3";
-    justify-items: center;
-  }
-  .seccion3_texto {
-    grid-area: textoseccion3;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  /*----------------------------- FOOTER -----------------------------*/
-  footer {
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(95, 141, 125);
-  }
-  .footerRedesContainer {
-    height: 100%;
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .footerRedesContainer div {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-  }
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+footer div h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "playfair", sans-serif;
+  color: white;
+}
+footer div i {
+  font-size: 35px;
+  margin: 10px;
+  padding: 10px 20px;
+  color: white;
+}
+footer div i:hover {
+  font-size: 40px;
+  color: rgb(244, 59, 138);
+}
+footer div .footerRedesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+}
+footer div .footerRedesContainer div {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*para flex
+al footer un margin top auto
+al body display: flex;
+flex-direction: column;
+min-height: 100vh;
+
+para grids
+al footer
+al body display: grid;
+min-height: 100vh;
+grid-template-rows: auto 1fr auto;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=estilos.css.map */

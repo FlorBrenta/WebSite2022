@@ -1,0 +1,116 @@
+/*----------------------------- HOME -----------------------------*/
+
+body{
+    background-color: $background-body;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    main{
+        .parte1 {
+            width: max-content;
+            height: 860PX;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 5px 0px rgb(69, 69, 69);
+        
+          h1{
+                padding: 20px;
+                position: absolute;
+                top: 60%;
+                left: 71%;
+                color: white;
+                }
+        img{
+                width: 100%;
+                height: 100%s;
+            }
+            }
+        .parte2{
+            margin: 40px 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        h2{
+            font: $Title-1;
+        }
+
+        p{
+            font: $texto-1;
+            }
+             }  
+
+        .parte3{
+            margin: 40px 0px 0px;
+            padding: 40px 40px 0px;
+            background-color: $background-section;
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                font: $Title-1;
+            }
+    
+            p{
+                font: $texto-2;
+                }
+            }
+        .lista-pasos{
+            margin: 0px 0px 40px;
+            padding: 40px 40px 40px;
+            background-color: $background-section;
+            display: flex;
+            flex-direction: row;
+                    .pasos{
+            
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        h3{
+                            padding: 40px 80PX;
+                            font-size: 80px;
+                            text-shadow: 5px;
+                            font-family: 'playfair', sans-serif $background-green;
+                            &:hover{
+                                background-color: rgb(244, 59, 138);
+                        }
+                        h4{
+                            font: $texto-4;
+                        }
+                        p{
+                            font: $texto-3;
+                        }
+                    }
+                }
+        .parte4{
+            margin: 40px 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            h2{
+                padding: 20px 0px;
+            }
+            
+            .card-body{
+                background-color: $background-section;
+                padding: 20px;
+                &:hover{
+                    background-color: rgb(244, 59, 138);
+                    .card-title{
+                        font: $texto-2;
+                    }
+                    .card-text{
+                        font: $texto-3;
+                    }
+                }
+             }  
+             .card-footer{
+                background-color: azure;
+                .text-muted{
+                    font: $texto-4;
+                }
+             }
+    }
+}
+}
+} 
